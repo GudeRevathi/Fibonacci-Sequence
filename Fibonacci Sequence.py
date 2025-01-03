@@ -1,8 +1,7 @@
 n=int(input("entera number:"))
 a,b=0,1
-print(a,b,end=" ")
-for i in range(n-2):
+
+for _ in range(n):
    
-    c=a+b 
-    print(c,end=" ")
-    a,b=b,c 
+    a,b=b,a+b 
+    print(b,end=" ")
